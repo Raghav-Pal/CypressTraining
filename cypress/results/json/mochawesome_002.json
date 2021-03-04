@@ -1,0 +1,132 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2021-03-04T05:06:41.299Z",
+    "end": "2021-03-04T05:06:52.409Z",
+    "duration": 11110,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d84bb8fd-f2fe-4be0-9afb-d8f01b41aa07",
+      "title": "",
+      "fullFile": "cypress\\integration\\login.ts",
+      "file": "cypress\\integration\\login.ts",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "de047b7a-3d15-409a-a6a4-cc4d885b986c",
+          "title": "All login tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login test - valid creds",
+              "fullTitle": "All login tests login test - valid creds",
+              "timedOut": null,
+              "duration": 4564,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\login.ts\\\\All login tests -- login test - valid creds (failed).png\"\n}",
+              "code": "loginPage.loginWithValidCredentials('test', 'test');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#unamd`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#unamd`, but never found it.\n    at LoginPage../cypress/pages/login_page.ts.LoginPage.loginWithValidCredentials (https://trytestingthis.netlify.app/__cypress/tests?p=cypress\\integration\\login.ts:137:12)\n    at Context.eval (https://trytestingthis.netlify.app/__cypress/tests?p=cypress\\integration\\login.ts:109:19)",
+                "diff": null
+              },
+              "uuid": "846bbe77-322c-4625-bfb5-1f084bf3b781",
+              "parentUUID": "de047b7a-3d15-409a-a6a4-cc4d885b986c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "login test - invalid creds",
+              "fullTitle": "All login tests login test - invalid creds",
+              "timedOut": null,
+              "duration": 4451,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "{\n  \"title\": \"Failed screenshot\",\n  \"value\": \"screenshots\\\\login.ts\\\\All login tests -- login test - invalid creds (failed).png\"\n}",
+              "code": "loginPage.loginWithInvalidCredentials('abc', '123');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#unamd`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `#unamd`, but never found it.\n    at LoginPage../cypress/pages/login_page.ts.LoginPage.loginWithInvalidCredentials (https://trytestingthis.netlify.app/__cypress/tests?p=cypress\\integration\\login.ts:143:12)\n    at Context.eval (https://trytestingthis.netlify.app/__cypress/tests?p=cypress\\integration\\login.ts:112:19)",
+                "diff": null
+              },
+              "uuid": "a70f5af7-9556-467e-89d9-3e336563dc9b",
+              "parentUUID": "de047b7a-3d15-409a-a6a4-cc4d885b986c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "846bbe77-322c-4625-bfb5-1f084bf3b781",
+            "a70f5af7-9556-467e-89d9-3e336563dc9b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 9015,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results/json",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
